@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio - Frias Matias</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Archivo CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fondo animado estilo Matrix -->
+    <canvas id="matrix-bg"></canvas>
+
+    <!-- ===========================
+         Navbar de navegación
+    ============================ -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===========================
+         Hero Section (Presentación)
+    ============================ -->
+    <section id="inicio" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Hola, soy Frias Matias</h1>
+            <p class="lead">Estudiante de Tecnicatura en Desarrollo de Software</p>
+            <a href="#contacto" class="btn btn-primary btn-lg mt-3">Contáctame</a>
+        </div>
+    </section>
+
+    <!-- ===========================
+         Sobre Mí
+    ============================ -->
+    <section id="sobre-mi" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Sobre Mí</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-4">
+                    <!-- Imagen con estilo hacker -->
+                    <img src="imagenes/img.jpeg" alt="Foto de perfil" class="img-fluid rounded-circle img-hacker">
+                </div>
+                <div class="col-md-8">
+                    <h3>¡Hola!</h3>
+                    <p>Soy estudiante de la Tecnicatura en Desarrollo de Software, apasionado por la tecnología y la programación. Me encanta aprender nuevas tecnologías y enfrentar desafíos que me permitan crecer como desarrollador.</p>
+                    <p>Actualmente me encuentro en el 2do año de la carrera y he trabajado en diversos proyectos académicos que han fortalecido mis habilidades en desarrollo web, bases de datos y programación.</p>
+                    <p>Mi objetivo es convertirme en un desarrollador y contribuir a proyectos innovadores que tengan un impacto positivo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         Habilidades
+    ============================ -->
+    <section id="habilidades" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Mis Habilidades</h2>
+            <div class="row">
+                <!-- Tarjeta HTML/CSS -->
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fab fa-html5 fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">HTML/CSS</h5>
+                            <p class="card-text">Creación de estructuras web semánticas y estilos responsivos con CSS y frameworks como Bootstrap.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta JavaScript -->
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fab fa-js-square fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title">JavaScript</h5>
+                            <p class="card-text">Desarrollo de interactividad web, manipulación del DOM y uso de librerías modernas.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta Bases de Datos -->
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-database fa-3x text-info mb-3"></i>
+                            <h5 class="card-title">Bases de Datos</h5>
+                            <p class="card-text">Diseño e implementación de bases de datos relacionales con MySQL y conocimientos básicos de MongoDB.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta Java -->
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fab fa-java fa-3x text-danger mb-3"></i>
+                            <h5 class="card-title">Java</h5>
+                            <p class="card-text">Desarrollo de aplicaciones desktop utilizando programación orientada a objetos con Java.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta Git -->
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fab fa-git-alt fa-3x text-dark mb-3"></i>
+                            <h5 class="card-title">Control de Versiones</h5>
+                            <p class="card-text">Manejo de Git para el control de versiones en proyectos individuales y colaborativos.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta Responsive Design -->
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-mobile-alt fa-3x text-success mb-3"></i>
+                            <h5 class="card-title">Responsive Design</h5>
+                            <p class="card-text">Creación de experiencias web adaptables a diferentes dispositivos y tamaños de pantalla.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         Proyectos
+    ============================ -->
+    <section id="proyectos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Mis Proyectos</h2>
+            <div class="row">
+                <!-- Proyecto 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">ID Cultural</h5>
+                            <p class="card-text">Una plataforma web integral para centralizar y visibilizar la actividad artística y cultural de Santiago del Estero.</p>
+                            <a href="#" class="btn btn-outline-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">AbejApp</h5>
+                            <p class="card-text">Aplicación web para la organización y venta de productos apícolas.</p>
+                            <a href="#" class="btn btn-outline-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         Contacto
+    ============================ -->
+    <section id="contacto" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Contacto</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="asunto" class="form-label">Asunto</label>
+                                    <input type="text" class="form-control" id="asunto" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         Footer
+    ============================ -->
+    <footer class="text-center">
+        <div class="container">
+            <p>Sígueme en mis redes sociales</p>
+            <div class="mb-3">
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2025 Frias Matias. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ===========================
+         Scripts JS
+    ============================ -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Fondo Matrix animado -->
+    <script src="matrix.js"></script>
+</body>
+</html>
